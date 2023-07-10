@@ -1,0 +1,67 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.left-section,
+.right-section {
+    height: 70vh;
+    /* Ajusta la altura según tus necesidades */
+
+}
+
+.left-section {
+    background-color: black;
+    color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+
+    background-image: url(../img/LogoO.png);
+    /* Ruta de la imagen de fondo */
+    background-position: center;
+    /* Centrar la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Evitar que la imagen de fondo se repita */
+    background-size: cover;
+    /* Ajustar la imagen de fondo para cubrir el contenedor */
+    background-size: 50% auto;
+    /* Ajustar el tamaño de la imagen de fondo */
+    width: 70vh;
+
+
+}
+
+.right-section {
+    background-color: white;
+    color: black;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 50vh;
+}
+
+body {
+    background-image: url(../img/BkgLogin.jpg);
+    background-size: cover;
+}
+
+/*color de iconos del input*/
+#Ilock{
+    color:rgb(37, 150, 190);
+}
+#Iuser{
+    color:rgb(37, 150, 190);
+}
+#IeyeSlash{
+    color:rgb(37, 150, 190);
+}
+/*-----------------------------*/
+#btnLogin{
+    background-color: rgb(81, 47, 160);
+    /* Cambiar el color de fondo a rojo */
+    color:white;
+    border-radius: 30px;
+    /* Hacer el botón más redondeado */
+}

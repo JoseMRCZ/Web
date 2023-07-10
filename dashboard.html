@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Cabecera del documento web-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+    <title>Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Reyes Cruz Jose Manuel" />
+
+
+
+</head>
+
+
+<body>
+
+    <!--Menú de arriba -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+            <img src="/SinglePage/ProyectoPag/img/LogoOax.png" width="70" height="20">
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carouselPopulares"
+                            data-bs-target="#carouselPopulares" data-bs-slide-to="1"
+                            onclick="scrollToCarousel()">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#carouselPopulares2" data-bs-target="#carouselPopulares2"
+                            data-bs-slide-to="1" onclick="scrollToCarousel2()">TV y programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#carouselPopulares3" data-bs-target="#carouselPopulares3"
+                            data-bs-slide-to="1" onclick="scrollToCarousel3()">Peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Series</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Estrenos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Kids</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <div id="Div1">
+        <img src="/SinglePage/ProyectoPag/img/LogoO.png">
+
+
+        <label for="etiqueta" class="texto-grande">Serie</label>
+
+    </div>
+    <div id="Div2">
+        <img src="/SinglePage/ProyectoPag/img/m.png">
+
+    </div>
+
+    <div id="Div3">
+        <h1>
+            #Número uno en visitas hoy
+        </h1>
+
+        <br>
+        <p style="font-size: 25px;">
+            Decidida a proteger a una joven paciente que escapó de un misterioro culto, <br>un psiquiatra acoge a la
+            niña, poniendo a su propia familia y vida en peligro
+        </p>
+    </div>
+
+    <div class="d-flex justify-content-between align-middle" id="divBtn">
+        <button type="button" id="btnDR" class="btn rounded" data-bs-toggle="modal" data-bs-target="#modalVideo">
+            <i class="fas fa-play"></i> <span class="text-black">&nbsp;&nbsp;Reproducir</span>
+        </button>
+        <button type="button" id="btnDMF" class="btn rounded">
+            <i class="bi bi-info-circle"></i> <span class="text-black">&nbsp;&nbsp;Más información</span>
+        </button>
+    </div>
+
+    <div id="PopO">
+        <p>
+            Popular en Oaxflix
+        </p>
+    </div>
+
+    <!--carousel de populares -->
+
+    <div name="carouselPopulares" id="carouselPopulares" class="carousel slide " data-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <div class="row vw-100">
+                    <div class="col-3 ">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/Jpk1.jpg" class="d-block " alt="...">
+
+                        <div class="position-absolute top-0 start-0">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-1">
+                        </div>
+                        <div class="position-absolute bottom-0 start-0">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+                    </div>
+                    <div class="col-3 ">
+
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/Gargolas.jpeg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-1">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-2">
+                        </div>
+                        <div class="position-absolute bottom-0 start-1">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/BTF3.jpg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-2">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-3">
+                        </div>
+                        <div class="position-absolute bottom-0 start-2">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/LM2.jpeg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-3">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-4">
+                        </div>
+                        <div class="position-absolute bottom-0 start-3">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row vw-100">
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/BTF1.jpeg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-0">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-1">
+                        </div>
+                        <div class="position-absolute bottom-0 start-0">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/Jpk2.jpg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-0">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-1">
+                        </div>
+                        <div class="position-absolute bottom-0 start-1">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/LM1.jpeg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-2">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-1">
+                        </div>
+                        <div class="position-absolute bottom-0 start-2">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/REYS.jpg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-3">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-1">
+                        </div>
+                        <div class="position-absolute bottom-0 start-3">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row vw-100">
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/Matrix1.jpeg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-3">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-1">
+                        </div>
+                        <div class="position-absolute bottom-0 start-0">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/FigthClub.jpeg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-3">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-1">
+                        </div>
+                        <div class="position-absolute bottom-0 start-1">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/Shrek2.jpeg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-3">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-1">
+                        </div>
+                        <div class="position-absolute bottom-0 start-2">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Favoritos/Jpk3.jpeg" class="d-block " alt="...">
+                        <div class="position-absolute top-0 start-3">
+                            <img src="/SinglePage/ProyectoPag/img/LogoO.png" class="logo logo-1">
+                        </div>
+                        <div class="position-absolute bottom-0 start-3">
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                            <i class="fas fa-star text-white"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopulares"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPopulares"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="PopTv">
+        <p>
+            TV y Programas
+        </p>
+    </div>
+    <div name="carouselPopulares2" id="carouselPopulares2" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPopulares2" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPopulares2" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselPopulares2" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <div class="row vw-100">
+                    <div class="col-3 ">
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/1.jpg" class="d-block " alt="..."
+                            onclick="openModal()">
+                    </div>
+                    <div class="col-3 ">
+
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/2.jpg" class="d-block " alt="...">
+
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/3.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/4.jpg" class="d-block " alt="...">
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row vw-100">
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/5.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/6.jpg" class="d-block " alt="...">
+
+                    </div>
+                    <div class="col-3">
+
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/7.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/8.jpg" class="d-block " alt="...">
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row vw-100">
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/9.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/10.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/11.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+
+                        <img src="/SinglePage/ProyectoPag/img/TVProgramas/12.jpg" class="d-block " alt="...">
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopulares2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPopulares2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="PopS">
+        <p>
+            Series
+        </p>
+    </div>
+    <div id="carouselPopulares3" class="carousel slide " data-ride="carouse">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPopulares3" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPopulares3" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselPopulares3" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <div class="row vw-100">
+                    <div class="col-3 ">
+                        <img src="/SinglePage/ProyectoPag/img/Series/1.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3 ">
+
+                        <img src="/SinglePage/ProyectoPag/img/Series/2.jpg" class="d-block " alt="...">
+
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Series/3.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Series/4.jpg" class="d-block " alt="...">
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row vw-100">
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Series/5.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Series/6.jpeg" class="d-block " alt="...">
+
+                    </div>
+                    <div class="col-3">
+
+                        <img src="/SinglePage/ProyectoPag/img/Series/7.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+
+                        <img src="/SinglePage/ProyectoPag/img/Series/8.jpg" class="d-block " alt="...">
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row vw-100">
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Series/9.jpeg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+                        <img src="/SinglePage/ProyectoPag/img/Series/10.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+
+                        <img src="/SinglePage/ProyectoPag/img/Series/11.jpg" class="d-block " alt="...">
+                    </div>
+                    <div class="col-3">
+
+                        <img src="/SinglePage/ProyectoPag/img/Series/12.jpg" class="d-block " alt="...">
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopulares3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPopulares3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!--Modal de video -->
+
+    <div class="modal fade" id="modalVideo">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Contenido del modal -->
+
+                <div class="modal-header">
+                    <h1 id="modalTF" class="text-center">Devil in Ohio</h1>
+                    <button type="button" class="btn-close" id="BtnFclose" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <video width="630" height="480" src="video/DiabloOhio.mp4" class="object-fit-scale"
+                        controls></video>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal de serie lista de capitulos -->
+
+    <div class="modal fade" id="modalLista" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-container">
+            <div class="modal-content" id="modalS">
+                <!-- Contenido del modal -->
+
+                <div class="modal-title">
+                    <h1 id="modalTF" class="text-center">Game of Throne</h1>
+                    <button type="button" class="btn-close" id="BtnFclose" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <video width="450" height="350" src="video/T1G.mp4" class="object-fit-scale"
+                        controls></video>
+                    <p class="modal-texto">
+                        una exitosa serie de televisión basada en la saga de novelas "Canción de hielo y fuego" escrita
+                        por George R.R. Martin. La serie se desarrolla en un mundo ficticio medieval conocido como
+                        Westeros y se centra en las luchas de poder entre varias casas nobles por el control del Trono
+                        de Hierro, el cual representa el dominio sobre los Siete Reinos.
+                    </p>
+
+                    <select class="custom-select" id="exampleSelect1">
+                        <option>Temporada 1</option>
+                        <option>Temporada 2</option>
+                        <option>Temporada 3</option>
+                      </select>
+                      <div class="container mt-5">
+                        <div class="d-flex align-items-center">
+                          <video width="250" height="150" src="video/T1C1g.mp4" class="object-fit-scale" controls></video>
+                          <div>
+                            <h6>1.Winter Is Coming</h6>
+                            <p>62 min</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container mt-5">
+                        <div class="d-flex align-items-center">
+                          <video width="250" height="150" src="video/T1C2.mp4" class="object-fit-scale" controls></video>
+                          <div>
+                            <h6>2.The Kingsroad</h6>
+                            <p>56 min</p>
+                          </div>
+                        </div>
+                      </div>
+
+        
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="js/dasboard.js"></script>
+
+</html>

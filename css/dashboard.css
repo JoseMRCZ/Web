@@ -1,0 +1,156 @@
+body {
+    background-image: url(../img/DashBkg.jpg);
+    background-size: cover;
+
+}
+
+.navbar {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-brand {
+    color: red;
+}
+
+p {
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+#Div1 label {
+    color: white;
+}
+
+#Div1 img {
+    width: 64px;
+    /* Ajusta el ancho del icono según tus necesidades */
+    height: 64px;
+    /* Ajusta la altura del icono según tus necesidades */
+    margin-right: 5px;
+    margin-left: 10px;
+    /* Ajusta el espacio entre el icono y la etiqueta según tus necesidades */
+}
+
+#Div2 img {
+    width: 600px;
+    /* Ajusta el ancho del icono según tus necesidades */
+    height: 200px;
+    /* Ajusta la altura del icono según tus necesidades */
+    margin-right: 5px;
+    margin-left: 10px;
+    /* Ajusta el espacio entre el icono y la etiqueta según tus necesidades */
+}
+
+.texto-grande {
+    font-size: 32px;
+}
+
+#Div3 h1 {
+    color: white;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+#Div3 p {
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+#btnDR {
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+}
+
+#btnDMF {
+    background-color: gray;
+    color: white;
+    margin-left: 10px;
+
+}
+
+#divBtn {
+    width: 400px;
+    height: 100px;
+    margin-left: 10px;
+
+}
+
+#btnDR {
+    width: 180px;
+    height: 70px;
+}
+
+#btnDMF {
+    width: 180px;
+    height: 70px;
+}
+
+#PopO {
+    font-size: 30px;
+}
+
+#carouselPopulares {
+    width: 100%;
+    height: 250px;
+}
+
+.d-block {
+    width: 100%;
+    height: 250px;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.fas {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.modal-dialog {
+    max-width: 750px;
+    /* Ajusta el valor según tus necesidades */
+}
+
+#modalS {
+    background-color: black;
+}
+h1{
+    color: white;
+}
+h6{
+    color:white;
+}
+
+.modal-texto {
+    max-width: 450px; /* Ajusta esta altura según tus necesidades */
+    overflow-y: auto;
+}
+
+.modal-container {
+    max-width: 500px; /* Establece el ancho máximo deseado para el modal */
+    pointer-events: none; /* Desactiva la interacción con el modal */
+    user-select: none; /* Desactiva la selección de texto en el modal */
+    resize: none !important; /* Desactiva el redimensionamiento del modal */
+}
+
+.custom-select {
+    background-color: gray;
+    color: white;
+  }
+
+
+
+
+
+
